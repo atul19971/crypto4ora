@@ -1,5 +1,5 @@
 # crypto4ora
-crypto4ora provide simple and enhanced assymetric cryptography capability in Oracle database.
+crypto4ora provide simple and enhanced assymetric cryptography capability in Oracle database. 
 # Features
 
 - Crypto4ora has implemented the assymetric(RSA) cryptography.
@@ -19,7 +19,7 @@ crypto4ora provide simple and enhanced assymetric cryptography capability in Ora
 
 ## Installation Guideline
 
-Download the zip crypto4rsa which contains `crypto4rsa.jar` and `crypto4rsa.sql`.
+Download the zip [crypto4ora](https://github.com/gogopop/CameraKit-Android) crypto4ora which contains `crypto4ora.jar` and `crypto4ora.sql`.
 
 
 ### Command Execution
