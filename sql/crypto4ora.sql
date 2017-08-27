@@ -1,7 +1,4 @@
 
-EXEC dbms_java.grant_permission( 'ATUL', 'SYS:java.util.PropertyPermission', 'java.class.path', 'write' );
-EXEC dbms_java.grant_permission( 'ATUL', 'SYS:java.io.FilePermission', '*', 'read' );
-
 CREATE OR REPLACE PACKAGE CRYPTO AS 
 FUNCTION RSA_ENCRYPT(PLAIN_TEXT VARCHAR2,PUBLIC_KEY VARCHAR2) RETURN VARCHAR2
 AS
