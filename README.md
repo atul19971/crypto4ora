@@ -19,7 +19,7 @@ crypto4ora provide simple and enhanced assymetric cryptography capability in Ora
 
 ## Installation Guideline
 
-Download the zip [crypto4ora](https://github.com/atul19971/crypto4ora/tree/master/zip/crypto4ora.zip) crypto4ora which contains `crypto4ora.jar` and `crypto4ora.sql`.
+Download the zip [crypto4ora](https://github.com/atul19971/crypto4ora/tree/master/zip) crypto4ora which contains `crypto4ora.jar` and `crypto4ora.sql`.
 
 
 ### Command Execution
@@ -30,23 +30,8 @@ loadjava -f -verbose -oracleresolver -resolve -oci8 -u user/password@service cry
 
 
 ### SQL Script
-Once load java executed succesfully run the script crypto4ora.sql in your required schema.
+Once loadjava command executed succesfully run the script [crypto4ora.sql]( https://github.com/atul19971/crypto4ora/blob/master/sql/crypto4ora.sql) in your required schema.
 
-```sql
-CREATE OR REPLACE PACKAGE CRYPTO AS 
-FUNCTION RSA_ENCRYPT(PLAIN_TEXT VARCHAR2,PUBLIC_KEY VARCHAR2) RETURN VARCHAR2
-AS
-LANGUAGE JAVA NAME 'com/dishtavar/crypto4ora/RSAUtil.encrypt (java.lang.String,java.lang.String) return java.lang.String';
-FUNCTION RSA_DECRYPT(ENCRYPTED_TEXT VARCHAR2,PRIVATE_KEY VARCHAR2) RETURN VARCHAR2
-AS
-LANGUAGE JAVA NAME 'com/dishtavar/crypto4ora/RSAUtil.decrypt (java.lang.String,java.lang.String) return java.lang.String';
-FUNCTION RSA_GENERATE_KEYS(KEY_SIZE NUMBER) RETURN VARCHAR2
-AS
-LANGUAGE JAVA NAME 'com/dishtavar/crypto4ora/GenerateKey.generateRSAKeys (java.lang.Integer) return java.lang.String';
-
-END CRYPTO;
-/
-```
 
 ## Usage
 
