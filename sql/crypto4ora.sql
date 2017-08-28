@@ -1,3 +1,16 @@
+--+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--START : PLEASE DO NOT MAKE ANY CHANGES TO THIS SECTION.
+--+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SET define on
+SET echo on
+SET linesize 2048
+SET escape off
+SET timing on
+SET trimspool on
+SET serveroutput on
+--++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--END : PLEASE DO NOT MAKE ANY CHANGES TO THIS SECTION.							 
+--++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CREATE OR REPLACE PACKAGE CRYPTO AS 
 FUNCTION RSA_ENCRYPT(PLAIN_TEXT VARCHAR2,PUBLIC_KEY VARCHAR2) RETURN VARCHAR2
@@ -12,5 +25,3 @@ LANGUAGE JAVA NAME 'com/dishtavar/crypto4ora/GenerateKey.generateRSAKeys (java.l
 
 END CRYPTO;
 /
-
---loadjava -f -verbose -oracleresolver -resolve -oci8 -u user/password@service crypto4ora.jar
