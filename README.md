@@ -19,7 +19,7 @@ crypto4ora provide simple and enhanced assymetric cryptography capability in Ora
 
 ## Installation Guideline
 
-Download the zip [crypto4ora](https://github.com/atul19971/crypto4ora/tree/master/zip) crypto4ora which contains `crypto4ora.jar` and `crypto4ora.sql`.
+Download the zip [crypto4ora](https://github.com/atul19971/crypto4ora/tree/master/zip) which contains `crypto4ora.jar` and `crypto4ora.sql`.
 
 
 ### Command Execution
