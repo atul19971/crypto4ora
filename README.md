@@ -73,7 +73,7 @@ select CRYPTO.RSA_SIGN(PLAIN_TEXT => 'cipher',
 
 ### Verify Sign
 
-Veification of signature can be done using public key and by calling function `RSA_VERIFY(MESSAGE_TO_VERIFY VARCHAR2,SIGNED_MESSAGE VARCHAR2, PUBLIC_KEY VARCHAR2)`.
+Veification of signature can be done using public key and by calling function `RSA_VERIFY(MESSAGE_TO_VERIFY VARCHAR2,SIGNED_MESSAGE VARCHAR2, PUBLIC_KEY VARCHAR2)`. The function will return 0(false) and 1(true).
 ```sql
 select CRYPTO.RSA_VERIFY(MESSAGE_TO_VERIFY => 'cipher',
                          SIGNED_MESSAGE => p3FbrxsRbDoLZuwtZvJpZ/f9HnbAHOmj4g1gtkhBudiofAYwAAIJCuVjbWlml8I1Nl07pJXVMTDKjmAL7gxAZA==, 
