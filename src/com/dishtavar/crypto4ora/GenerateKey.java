@@ -23,8 +23,8 @@ public class GenerateKey {
 		KeyPair keyPair = generateKeyPair(keySize);
 		String publicKey = Base64.encode(keyPair.getPublic().getEncoded());
 		String privateKey = Base64.encode(keyPair.getPrivate().getEncoded());
-		String keys="****publicKey start:"+publicKey+"   ****publicKey end*** ***privateKey start:"+
-		privateKey+"  *****privateKey end donot copy asteric(*) ****";
+		String keys="****publicKey start*****"+publicKey+"   ****publicKey end**** ****privateKey start****"+
+		privateKey+"  ****privateKey end**** do not copy asteric(*) ****";
 		return keys;
 	}
 
