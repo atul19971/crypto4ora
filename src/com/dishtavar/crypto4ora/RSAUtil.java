@@ -8,9 +8,21 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.Cipher;
 
+/**
+ * 
+ * @author atul.singh
+ *
+ */
 public class RSAUtil {
 	private static final String ALGORITHM = "RSA";
 
+	/**
+	 * 
+	 * @param valueToEncrypt
+	 * @param publicKey
+	 * @return
+	 * @throws Exception
+	 */
 	public static String encrypt(String valueToEncrypt, String publicKey) throws Exception {
 		byte[] publicKeyByteArr = Base64.decode(publicKey);
 		PublicKey key = KeyFactory.getInstance(ALGORITHM).generatePublic(new X509EncodedKeySpec(publicKeyByteArr));
@@ -20,6 +32,13 @@ public class RSAUtil {
 		return Base64.encode(encryptedBytes);
 	}
 
+	/**
+	 * 
+	 * @param valueToDecrypt
+	 * @param privateKey
+	 * @return
+	 * @throws Exception
+	 */
 	public static String decrypt(String valueToDecrypt, String privateKey) throws Exception {
 		byte[] privateKeyByteArr = Base64.decode(privateKey);
 		byte[] valueToDecryptBArr = Base64.decode(valueToDecrypt);

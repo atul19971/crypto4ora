@@ -1,6 +1,11 @@
 package com.dishtavar.crypto4ora;
 import java.io.ByteArrayOutputStream;
-
+/**
+ * 
+ * @author atul.singh
+ * This class added to avoid any dependency on 
+ * 3rd party library in JDK<8
+ */
 class Base64
 {
     public static String encode(byte[] data)

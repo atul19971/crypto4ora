@@ -5,7 +5,11 @@ import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
-
+/**
+ * 
+ * @author atul.singh
+ *
+ */
 public class GenerateKey {
 	public static KeyPair generateKeyPair(Integer keySize) throws NoSuchAlgorithmException, NoSuchProviderException {
 		KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
