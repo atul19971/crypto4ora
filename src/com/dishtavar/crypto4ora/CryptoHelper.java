@@ -6,11 +6,7 @@ package com.dishtavar.crypto4ora;
  *
  */
 public class CryptoHelper {
-	/**
-	 * 
-	 * @param byteInput
-	 * @return
-	 */
+
 	public static String getStringFromByte(byte[] byteInput) {
 		return new String(byteInput);
 	}

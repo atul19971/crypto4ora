@@ -8,12 +8,14 @@ import java.security.SecureRandom;
 /**
  * 
  * @author atul.singh
+ * Generate RSA Key
  *
  */
 public class GenerateKey {
 	public static KeyPair generateKeyPair(Integer keySize) throws NoSuchAlgorithmException, NoSuchProviderException {
 		KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
 		SecureRandom random = SecureRandom.getInstance("SHA1PRNG", "SUN");
+		
 		keyGen.initialize(keySize, random);
 		KeyPair generateKeyPair = keyGen.generateKeyPair();
 		return generateKeyPair;
