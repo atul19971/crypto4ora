@@ -5,7 +5,7 @@ crypto4ora provides simple and enhanced asymmetric cryptography capability in Or
 
 - Crypto4ora has implemented the asymmetric(RSA) cryptography.
 - public/private key generator for RSA algorithm.
-- Encryption using public key.
+- Encryption using public key.(PKCS1Padding)
 - Decryption using private key.
 - Digital Signature using RSA algorithm(SHA1withRSA)
 - Sign/Verify using RSA keys.
