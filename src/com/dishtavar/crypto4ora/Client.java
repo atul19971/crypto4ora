@@ -26,7 +26,7 @@ public class Client {
 		signTest();
 
 	}
-	public static void crypyoTest() throws Exception{
+	public static void cryptoTest() throws Exception{
 		String encryptedData = RSAUtil.encrypt("It is test", publicKeyStr);
 		System.out.println(new String(encryptedData));
 		String decryptedData = RSAUtil.decrypt(new String(encryptedData), privateKeyStr);
